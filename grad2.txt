@@ -1,0 +1,89 @@
+import java.text.DecimalFormat;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class Grad2
+{
+  public static void main(String[] args)
+  {
+    Scanner input = new Scanner(System.in);
+   
+    double a = 0;
+    double b = 0;
+    double c = 0;
+    double discriminant = 0;
+    double d = 0;
+    double x1 = 0;
+    double x2 = 0;
+    
+    try {
+    System.out.print("Valorea lui a : "); 
+    a = input.nextDouble();
+    System.out.print("Valorea lui b : "); 
+    b = input.nextDouble();
+    System.out.print("Valorea lui c : "); 
+    c = input.nextDouble();
+    } catch (InputMismatchException e) {
+    	System.out.println("nu e numar real");
+    	input.nextDouble();
+    }
+    
+    if (a <= -7.0  ||  a >= 20.0 || a == 0)
+    {
+    	System.out.println("a trebuie sa fie in intervalul [-7,20], diferit de 0 ");
+    	System.out.print("Valorea lui a : "); 
+    	a = input.nextDouble();
+    }     
+    a = a*10.0;
+    a = Math.round(a);
+    a = a /10.0;
+    
+    
+    if (b <= -7.0  ||  b >= 20.0)
+    {
+    	System.out.println("b trebuie sa fie in intervalul [-7,20] ");
+    	System.out.print("Valorea lui b :"); 
+    	b = input.nextDouble();
+    }
+    b = b*10.0;
+    b = Math.round(b);
+    b = b /10.0;
+    
+    if (c <= -7.0  ||  c >= 20.0)
+    {
+    	System.out.println("c trebuie sa fie in intervalul [-7,20] ");
+    	System.out.print("Valorea lui c : "); 
+    	c = input.nextDouble();
+    }
+    c = c*10.0;
+    c = Math.round(c);
+    c = c /10.0;
+ 
+   
+    discriminant = (b * b - 4 * a * c);
+    d = Math.sqrt(discriminant);
+    x1=(-b + d) / (2.0*a);    
+    x2=(-b - d) / (2.0*a);
+    
+    x1 = x1*10.0;
+    x1 = Math.round(x1);
+    x1 = x1 /10.0;
+    
+
+    x2 = x2*10.0;
+    x2 = Math.round(x2);
+    x2 = x2 /10.0;
+    
+    if (discriminant >= 0 && x1>=-10.0 || x1<=10.0 && x2>=-10.0 || x2<=10.012 ) {
+    	System.out.println("Prima radacina : "
+		   			+ x1);
+        
+       System.out.println("A doua radacina : "
+    		   		+ x2);
+    } 
+    else
+    {
+       System.out.println("Radacinile sunt imaginare sau nu sunt in intervalul [-10,10]");
+    }
+  }
+}

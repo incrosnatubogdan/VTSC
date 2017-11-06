@@ -1,0 +1,48 @@
+Operatori: N1=133; n1=19
+
+= 46
+* 10
+=> 6
+<= 5
+|| 6
+; 50 
+public 1
+static 1
+void 1
+main 1
+double 7
+. 69
+import 3
+discriminant 4
+/ 7
+if 5
+input.nextDouble 7
+else 1
++ 3
+
+C=19*log2(133)+21*log2(154)
+
+
+Operanzi: N2=154 n2=21
+
+"" 13
+() 38
+d 4
+a 15
+b 15
+c 12
+x1 11
+x2 11
+Valorea lui a : 2
+b trebuie sa fie in intervalul [-7,20] ---- 1
+Valorea lui b : 2
+Valorea lui c : 2
+7.0 --- 3
+20.0 -- 6
+0 -- 2
+10.00 -- 4
+System.out.println -- 7
+Prima radacina - 1
+A doua radacina - 1
+a trebuie sa fie in intervalul [-7,20], diferit de 0 ---- 1
+java 3
