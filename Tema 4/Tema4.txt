@@ -1,0 +1,13 @@
+Continuitatea Aplicatiei
+
+Diferenta este atat in design, youtube optand pentru un design Material, cat si in eliminerea unui numar de butoane
+
+My Channel, Get Youtube Red
+
+V1 = {Home, Trending, Subscriptions}
+V2={Home, Trending, Subscriptions,My Channel, Get Youtube Red}
+V1UV2={Home, Trending, Subscriptions,My Channel, Get Youtube Red}
+V1^V2={Home, Trending, Subscriptions}
+LG(V1^V2)=3
+LG(V1UV2)=5
+cv=3/5=0.6
